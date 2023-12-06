@@ -1,0 +1,37 @@
+body{
+    background-color:rgb(175, 234, 234);
+    
+    
+}
+a{
+    text-decoration: none;
+}
+.title{
+    border:1px solid rgb(163, 135, 135);
+    text-transform: capitalize;
+    font-weight: bold;
+    word-spacing: 25px;
+    font-size: 17px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background-color:rgb(90, 194, 159);
+    
+}
+h3{
+    text-align: center;
+    color:blueviolet;
+}
+#dog{
+    float:left;
+    width:50%;
+}
+a:hover{
+    color:antiquewhite;
+}
+#rabbit{
+    float:left;
+    width:50%;
+}
+#sure{
+    text-align: center;
+}

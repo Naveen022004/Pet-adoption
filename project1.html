@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADOPTION</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+    <div class="title">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/project.html">Home</a>
+                <a href="http://127.0.0.1:5500/project3.html" target="_blank">Donation</a>
+                <a href="http://127.0.0.1:5500/project5.html" target="_blank">Consultation</a>
+                <a href="http://127.0.0.1:5500/project4.html" target="_blank">Contact</a></li>
+        </ul>
+    </div>
+    <div id="detail">
+        <div class="box1">
+            <p>
+                <pre>
+
+                </pre>
+            </p>
+            <h1>Why you should adopt animals???</h1>
+            <p>
+                <pre>
+                </pre>
+            </p>
+            <ul>
+                <li>Saving a life feels good.</li>
+                <li>You will get a beautiful and good companion.</li>
+                <li>You will help fight animal cruelty.</li>
+                <li>You will get a lifetime support system.</li>
+                <li>You will adopt a animal that has received good care.</li>
+            </ul>
+        </div>
+        <div >
+            <p class="box2">
+                <pre>
+
+
+
+                
+                    If you want to adopt small animal, Then 
+                    please enter your detail here...
+                    <form id="myForm">
+                        <input type="text" class="info" name="name" placeholder="Enter your name" required ><br>
+                        <input type="email" class="info" name="email" placeholder="Enter your email" required><br>
+                        <input type="number" class="info" id="phoneNumber" name="phone no" placeholder="Enter your phone number" required><br>
+                        <input type="text" class="info" name="address" placeholder="Enter your address" required><br>
+                        <a href="http://127.0.0.1:5500/project2.html"><input type="submit" class="info" name="submit"></a><br>
+                        <input type="reset" class="info_1" name="reset">
+
+                    </form>
+                    
+                    
+                </pre>
+            </p>
+        </div>
+    </div>
+    <script>
+                        
+        // Get the form element
+        var myForm = document.getElementById('myForm');
+
+        // Attach a function to the form's submit event
+        myForm.addEventListener('submit', function (event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Open a new webpage (replace 'https://example.com' with your desired URL)
+            window.open('http://127.0.0.1:5500/project2.html', '_blank');
+        });
+    </script>
+</body>
+</html>

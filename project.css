@@ -1,0 +1,28 @@
+li{
+    border:1px solid rgb(163, 135, 135);
+    margin-left:140px;
+    margin-right:170px;
+    word-spacing:22px ;
+    padding:15px;
+    border-radius:35%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(210, 205, 206);
+
+    
+}
+a:hover{
+    background-color: rgb(113, 187, 162);
+
+    
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url(dog2.jpg);
+    background-size:cover;
+    
+}

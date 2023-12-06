@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONATION</title>
+    <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+    <div class="title">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/project.html">Home</a>
+                <a href="http://127.0.0.1:5500/project1.html" target="_blank">Adoption</a>
+                <a href="http://127.0.0.1:5500/project5.html" target="_blank">Consultation</a>
+                <a href="http://127.0.0.1:5500/project4.html" target="_blank">Contact</a></li>
+        </ul>
+    </div>
+    <div class="details">
+        <div>
+            <pre>
+
+            </pre>
+            <h2>Why you should donate to animal charities??</h2>
+        </div>
+        <div>
+            <ul>
+                <li>Helping the planet</li>
+                <li>Poverty can be reduced</li>
+                <li>Helping the poor</li>
+                <li>Provides a chance to create a better world</li>
+                <li>Spread justice</li>
+            </ul>
+        </div>
+    </div>
+    <div class="info">
+        <div>
+            <p id="Detail">If you want to donate please fill the details here...</p>
+        </div>
+        <div class="info1">
+            <form id="myForm">
+                <input type="text" name="name" placeholder="Enter your name" required> <br>
+                <br>
+                <input type="number" name="phoneno" id="phoneNumber" placeholder="Enter your phone number" required><br>
+                <br>
+                <p>Choose Payment method</p>
+                <select name="payment method" id="pay">
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Debit Card">Debit Card</option>
+                    <option value="PayPal">PayPal</option>
+                </select><br>
+                <br>
+               <b>Amount</b> <input type="number" name="amount" placeholder="Enter amount" required> <br>
+                <br>
+               <b>Card Number</b> <input type="number" name="cardno" placeholder="Enter card number" required><br>
+                <br>
+               <b>Name</b> <input type="text" name="name" placeholder="Enter name" required><br>
+                <br>
+               <b>Expiry Date</b> <input type="date" name="expirydate" placeholder="Enter expiry date" required><br>
+                <br>
+               <b>Enter CVV</b> <input type="number" name="cvv" placeholder="Enter CVV" required><br>
+                <br>
+                <input type="submit" name="submit">
+                
+            </form>
+            
+        </div>
+    </div>
+    <script>
+        // Get the form and input elements
+        var myForm = document.getElementById('myForm');
+        var phoneNumberInput = document.getElementById('phoneNumber');
+
+        // Attach a function to the form's submit event
+        myForm.addEventListener('submit', function (event) {
+            // Check if the phone number is a 10-digit number
+            if (!isValidPhoneNumber(phoneNumberInput.value)) {
+                alert('Please enter a 10-digit phone number.');
+                event.preventDefault(); // Prevent form submission
+            }
+        });
+
+        // Function to validate a 10-digit phone number
+        function isValidPhoneNumber(phoneNumber) {
+            // Remove any non-numeric characters
+            var numericValue = phoneNumber.replace(/\D/g, '');
+            
+            // Check if the numeric value is exactly 10 digits
+            return numericValue.length === 10;
+        }
+    </script>
+    
+</body>
+</html>

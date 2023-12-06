@@ -1,0 +1,54 @@
+body{
+    background-color: aqua;
+    border:4px dashed rgb(0, 255, 170);
+   
+}
+.title{
+    border:1px solid rgb(103, 153, 114);
+    text-transform: capitalize;
+    font-weight: bold;
+    word-spacing: 25px;
+    font-size: 17px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background-color:rgb(85, 142, 116);
+
+}
+a:hover{
+    color:antiquewhite;
+}
+a{
+    text-decoration: none;
+}
+.details{
+    float:left;
+    width:50%;
+
+}
+li{
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(200, 127, 255);
+}
+.info{
+    float:right;
+    width:45%;
+
+}
+#Detail{
+    font-size: 20px;
+    font-weight:bold;
+}
+form{
+    text-align: center;
+    
+}
+.info1{
+    border:1px solid rgb(200, 127, 255);
+    border-radius:8%;
+    background-color:rgb(124, 109, 136) ;
+}
+p{
+    font-weight:bold;
+}

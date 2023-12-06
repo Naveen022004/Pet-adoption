@@ -1,0 +1,47 @@
+body{
+    background-image: url(contact.jpeg);
+    background-size:cover;
+
+}
+.title{
+    border:1px solid rgb(0, 0, 0);
+    text-transform: capitalize;
+    font-weight: bold;
+    word-spacing: 25px;
+    font-size: 17px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background-color:rgb(120, 127, 128);
+
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:antiquewhite;
+}
+.contact{
+    float:left;
+    width:20%;
+}
+h2{
+    text-align:center;
+    text-decoration: underline;
+}
+
+
+#detail{
+    text-align:center;
+   
+    float:right;
+    margin-right:300px;
+    
+}
+
+.highlight{
+    font-size:30px;
+    font-weight:bold;
+}
+.details{
+    text-align:center;
+}

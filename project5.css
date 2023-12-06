@@ -1,0 +1,55 @@
+.title{
+    border:1px solid rgb(103, 153, 114);
+    text-transform: capitalize;
+    font-weight: bold;
+    word-spacing: 25px;
+    font-size: 17px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background-color:rgb(85, 137, 142);
+
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:antiquewhite;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('vet.jpeg'); /* Replace 'background-image.jpg' with your actual image file */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: rgb((255, 255, 255), 76, 76);
+}
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .box {
+    background: rgba(69, 195, 134, 0.612);
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h2, h3, h4 {
+    margin: 10px 0px;
+  }
+
+ 
+
+  
