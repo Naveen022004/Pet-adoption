@@ -1,6 +1,7 @@
 ---
 
-```markdown
+markdown
+
 # 🐾 Pet Adoption Platform
 
 A lightweight web application designed to facilitate animal adoptions, enable pet care consultations, collect donations, and provide contact resources for prospective pet owners.
