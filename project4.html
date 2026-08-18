@@ -1,56 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACT</title>
-    <link rel="stylesheet" href="project4.css">
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Contact</title><link rel="stylesheet" href="style.css"></head>
 <body>
-    <div class="title">
-        <ul>
-            <li><nav>
-    <a href="index.html">Home</a>
-    <a href="project1.html">Adoption</a>
-    <a href="project2.html">Choose Pet</a>
-    <a href="project3.html">Donation</a>
-    <a href="project4.html">Contact</a>
-    <a href="project5.html">Consultation</a>
-</nav>
-                </li>
-        </ul>
-    </div>
-        <div class="contact">
-            <pre>
-                
-            </pre>
-            <h2>Contact Us</h2>
-            <div class="details">
-                <p><b>Email Id:</b></p>
-                <p><b>abc@gamil.com</b></p>
-                <br>
-                <p><b>Phone No:.</b></p>
-                <p><b>012-345-6789</b></p>
-            </div>
-        
-            
-
-        </div>
-        <div id="detail">
-            <pre>
-            </pre>
-            <p class="highlight">Send Message</p>
-            <form>
-                <input type="text" name="name" placeholder="Enter name" required><br>
-                <br>
-                <input type="email" name="email" placeholder="Enter email-id" required><br>
-                <br>
-                <input type="text" name="message"  placeholder="Enter message" required>
-                <br>
-                <br>
-                <input type="submit" >
-            </form>
-
-        </div>
-</body>
-</html>
+<nav><a href="index.html">Home</a><a href="project1.html">Adoption</a><a href="project2.html">Choose Pet</a><a href="project3.html">Donation</a><a class="active" href="project4.html">Contact</a><a href="project5.html">Consultation</a></nav>
+<main class="container"><div class="card"><h1>Contact Us</h1><p>Have a question about adoption? Send us a message.</p><p><strong>Email:</strong> petadoption@example.com</p><p><strong>Phone:</strong> +91 00000 00000</p></div><div class="card"><h2>Send Message</h2><form id="contactForm" class="form"><input type="text" placeholder="Your name" required><input type="email" placeholder="Your email" required><textarea placeholder="Your message" required></textarea><button class="btn" type="submit">Send Message</button></form><div id="message" class="message"></div></div></main>
+<script>document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const m=document.getElementById('message');m.style.display='block';m.textContent='Thank you! Your message has been received in this demo.';this.reset()});</script>
+</body></html>
