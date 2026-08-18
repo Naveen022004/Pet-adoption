@@ -1,100 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO CHOOSE PET</title>
-    <link rel="stylesheet" href="project2.css">
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Choose Pet</title><link rel="stylesheet" href="style.css"></head>
 <body>
-    <div class="title">
-        <ul>
-            <li><nav>
-    <a href="index.html">Home</a>
-    <a href="project1.html">Adoption</a>
-    <a href="project2.html">Choose Pet</a>
-    <a href="project3.html">Donation</a>
-    <a href="project4.html">Contact</a>
-    <a href="project5.html">Consultation</a>
-</nav></li>
-        </ul>
-    </div>
-    <h3>Choose Your Pet Animal</h3>
-    <form>
-        <div id="dog">
-            <div>
-                <img src="dogg.jpeg" alt="dog photo" height="130px">
-            </div>
-            <div>
-                <label for="dogs">Choose Dog's breed:</label>
-                <select name="dog" id="dogs">
-                    <option value="Golden Retriever">Golden Retriever</option>
-                    <option value="Pug">Pug</option>
-                    <option value="German Shepherd">German Shepherd</option>
-                    <option value="Bulldog">Bulldog</option>
-                    <option value="no" selected>None</option>
-                </select>
-            </div>
-        </div>
-        <div id="cat">
-            <div>
-                <img src="cat1.jpeg" alt="cat photo" height="130px">
-            </div>
-            <div>
-                <label for="cats">Choose Cat's breed:</label>
-                <select name="cat" id="cats">
-                    <option value="Maine Coon">Maine Coon</option>
-                    <option value="Ragdoll ">Ragdoll</option>
-                    <option value="Siamese ">Siamese</option>
-                    <option value="Persian">Persian</option>
-                    <option value="no" selected>None</option>
-                </select>
-            </div>
-        </div>
-        <div><pre>
-
-        </pre>
-        </div>
-        <div id="rabbit">
-            <div>
-                <img src="rabbit1.jpeg" alt="rabbit photo" height="130px">
-            </div>
-            <div>
-                <label for="rabbits">Choose Rabbits's breed</label>
-                <select name="rabbit" id="rabbits">
-                    <option value="Mini-rex Rabbits">Mini-rex Rabbits</option>
-                    <option value="Holland Lop Rabbits">Holland Lop Rabbits</option>
-                    <option value="Dutch Rabbits">Dutch Rabbits</option>
-                    <option value="Lionhead Rabbits">Lionhead Rabbits</option>
-                    <option value="no" selected>None</option>
-                </select>
-            </div>
-        </div>
-        <div id="bird">
-            <div>
-                <img src="birds.jpeg" alt="bird's image" height="130px">
-            </div>
-            <div>
-                <label for="birds">Choose Bird's breed</label>
-                <select name="bird" id="birds">
-                    <option value="Canaries">Canaries</option>
-                    <option value="Conures">Conures</option>
-                    <option value="Parrotlets">Parrotlets</option>
-                    <option value="Pionus parrots">Pionus parrots</option>
-                    <option value="no" selected>None</option>
-                </select>
-            </div>
-        </div>
-        <div>
-            <pre>
-
-            </pre>
-        </div>
-        <div id="sure">
-            <label for="sure">Are you sure that you want to select that pet?</label>
-            <input type="checkbox" name="sure" required>
-        </div>
-
-        
-</body>
-</html>
+<nav><a href="index.html">Home</a><a href="project1.html">Adoption</a><a class="active" href="project2.html">Choose Pet</a><a href="project3.html">Donation</a><a href="project4.html">Contact</a><a href="project5.html">Consultation</a></nav>
+<main class="container"><h1>Choose Your Pet</h1><p>Select one animal and breed, then confirm your choice.</p><form id="petForm"><div class="grid">
+<article class="pet-card"><img src="dogg.jpeg" alt="Dog"><h3>Dog</h3><label>Breed<select id="dogs"><option value="">Select breed</option><option>Golden Retriever</option><option>Pug</option><option>German Shepherd</option><option>Bulldog</option></select></label></article>
+<article class="pet-card"><img src="cat1.jpeg" alt="Cat"><h3>Cat</h3><label>Breed<select id="cats"><option value="">Select breed</option><option>Maine Coon</option><option>Ragdoll</option><option>Siamese</option><option>Persian</option></select></label></article>
+<article class="pet-card"><img src="rabbit1.jpeg" alt="Rabbit"><h3>Rabbit</h3><label>Breed<select id="rabbits"><option value="">Select breed</option><option>Mini Rex</option><option>Holland Lop</option><option>Dutch</option><option>Lionhead</option></select></label></article>
+<article class="pet-card"><img src="birds.jpeg" alt="Bird"><h3>Bird</h3><label>Breed<select id="birds"><option value="">Select breed</option><option>Canary</option><option>Conure</option><option>Parrotlet</option><option>Pionus</option></select></label></article>
+</div><div class="card"><label><input type="checkbox" id="sure" required> I confirm that I want to continue with this adoption selection.</label><br><br><button class="btn" type="submit">Confirm Selection</button><div id="message" class="message"></div></div></form></main>
+<script>document.getElementById('petForm').addEventListener('submit',function(e){e.preventDefault();const picks=[['Dog',document.getElementById('dogs').value],['Cat',document.getElementById('cats').value],['Rabbit',document.getElementById('rabbits').value],['Bird',document.getElementById('birds').value]].filter(x=>x[1]);if(picks.length!==1){alert('Please select exactly one pet and breed.');return}localStorage.setItem('selectedPet',picks[0][0]+' - '+picks[0][1]);const m=document.getElementById('message');m.style.display='block';m.textContent='Selected: '+picks[0][0]+' - '+picks[0][1]+'. Your adoption request is ready.'});</script>
+</body></html>
