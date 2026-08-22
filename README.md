@@ -1,105 +1,67 @@
----
+# 🐾 Pet Adoption
 
-markdown
+A responsive static website demonstrating a simple pet-adoption journey: learn about adoption, submit applicant details, choose a pet, make a demo donation pledge, contact the project, and view veterinary consultation information.
 
-# 🐾 Pet Adoption Platform
+> **Demo notice:** This is a front-end student project. Forms use browser-side JavaScript/local storage only; no real adoption, payment, or medical booking is processed.
 
-A lightweight web application designed to facilitate animal adoptions, enable pet care consultations, collect donations, and provide contact resources for prospective pet owners.
+## ✨ Features
 
----
+- Responsive navigation and layouts for desktop and mobile.
+- Semantic HTML5 structure and accessible form labels.
+- Keyboard-visible focus states and a skip-to-content link.
+- Adoption applicant form with client-side validation.
+- Pet and breed selection with exactly-one selection validation.
+- Donation pledge demo that explicitly avoids collecting real payment credentials.
+- Contact form demo with accessible status messages.
+- Veterinary consultation cards with phone links.
+- Shared CSS for consistent design and reduced duplication.
 
 ## 🛠️ Built With
 
-* **HTML5** – Page structuring and forms
-* **CSS3** – Custom styling, navigation design, and responsive image backgrounds
-* **JavaScript (Vanilla)** – Form event handling and redirection logic
+- **HTML5** — semantic page structure and forms
+- **CSS3** — responsive layout, grid, styling and accessibility states
+- **Vanilla JavaScript** — validation, localStorage and demo interactions
 
----
-
-## 📁 Repository Structure
+## 📁 Project Structure
 
 ```text
 .
-├── project.html       # Landing / Home page
-├── project1.html      # Adoption information & applicant form
-├── project2.html      # Post-submission confirmation / secondary view
-├── project3.html      # Donation page
-├── project4.html      # Contact page
-├── project5.html      # Pet consultation page
-├── project.css        # Styles for home page
-├── project1.css       # Styles for adoption page
-└── images/
-    ├── birds.jpeg     # Duckling asset
-    ├── cat1.jpeg      # Cat asset
-    ├── contact.jpeg   # Contact icon graphics
-    ├── dog2.jpg       # Background image (Home)
-    ├── dog3.jpg       # Background image (Adoption)
-    └── dogg.jpeg      # Puppy asset
-
+├── index.html       # Home / landing page
+├── project1.html    # Adoption information and applicant form
+├── project2.html    # Pet and breed selection
+├── project3.html    # Donation pledge demo
+├── project4.html    # Contact form demo
+├── project5.html    # Veterinary consultation information
+├── style.css        # Shared responsive and accessible styles
+├── dog2.jpg         # Home hero image
+├── dog3.jpg         # Pet imagery
+├── dogg.jpeg        # Dog card image
+├── cat1.jpeg        # Cat card image
+├── rabbit1.jpeg     # Rabbit card image
+└── birds.jpeg       # Bird card image
 ```
 
----
+The older `project*.css` files are retained for repository history/compatibility; the current pages use the shared `style.css`.
 
-## ✨ Key Features
+## 🚀 Run Locally
 
-* **Home Navigation Hub (`project.html`):** Central navigation menu giving quick access to Adoption, Donation, Consultation, and Contact sections.
+No build tools are required.
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Naveen022004/Pet-adoption.git
+   cd Pet-adoption
+   ```
+2. Open `index.html` in a browser, or use VS Code Live Server for local development.
 
-* **Interactive Adoption Portal (`project1.html`):**
+## 🌐 GitHub Pages
 
-* **Educational Content:** Highlights the benefits of pet adoption (saving lives, fighting animal cruelty, obtaining lifetime companionship).
+Because the project is a static site with `index.html` at the repository root, it can be published directly with GitHub Pages using the `main` branch and `/ (root)` as the publishing source.
 
+## ♿ Accessibility
 
-* **Applicant Form:** Captures user details including Name, Email, Phone Number, and Address for prospective adoption.
-
-
-* **Event Driven Navigation:** Automatically redirects applicants upon form submission.
-
-
-
-
-* **Responsive Design & Visuals:** Features custom background images (`dog2.jpg`, `dog3.jpg`) and styling tailored for pet lovers.
-
-
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-To run this project locally, you will need a standard web browser or a local server extension (such as VS Code **Live Server**).
-
-### Installation & Local Setup
-
-1. **Clone the Repository:**
-```bash
-git clone [https://github.com/your-username/pet-adoption-platform.git](https://github.com/your-username/pet-adoption-platform.git)
-
-```
-
-
-2. **Navigate into the project directory:**
-```bash
-cd pet-adoption-platform
-
-```
-
-
-3. **Launch the Application:**
-* Open `project.html` in your web browser.
-* *Optionally*, use **Live Server** on port `5500` to mirror default routing (e.g., `http://127.0.0.1:5500/project.html`).
-
-
-
-
-
----
+The current pages include descriptive metadata, semantic headings, explicit form labels, keyboard focus indicators, `aria-current` navigation state, live status messages, descriptive image alternatives, and reduced-motion support.
 
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-```
-
-```
+This project is intended for educational and portfolio use.
